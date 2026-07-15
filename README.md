@@ -209,7 +209,7 @@ Void Installer 当前需要 **Microsoft .NET 6 Desktop Runtime x64**。如果
 ![Void Installer 显示安装完成](png/installation-05-installed.png)
 
 ```text
-"你的MOD目录\Dishonored2_Simplified_Chinese\Runtime\D2RuntimeLauncher.exe" --steam-command %command%
+"你的MOD目录\Runtime\D2RuntimeLauncher.exe" --steam-command %command%
 ```
 
 例如，把文件夹放在 `D:\Dishonored2_Simplified_Chinese` 时填写：
