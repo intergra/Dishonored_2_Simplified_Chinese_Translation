@@ -209,7 +209,7 @@ Void Installer 当前需要 **Microsoft .NET 6 Desktop Runtime x64**。如果
 ![Void Installer 显示安装完成](png/installation-05-installed.png)
 
 ```text
-"X:\你的MOD目录\Dishonored2_Simplified_Chinese\Runtime\D2RuntimeLauncher.exe" --steam-command %command%
+"你的MOD目录\Dishonored2_Simplified_Chinese\Runtime\D2RuntimeLauncher.exe" --steam-command %command%
 ```
 
 例如，把文件夹放在 `D:\Dishonored2_Simplified_Chinese` 时填写：
@@ -218,8 +218,9 @@ Void Installer 当前需要 **Microsoft .NET 6 Desktop Runtime x64**。如果
 "D:\Dishonored2_Simplified_Chinese\Runtime\D2RuntimeLauncher.exe" --steam-command %command%
 ```
 
-命令必须保持为一整行，路径两侧使用英文半角双引号。以后仍然从 Steam 正常点击
-“开始游戏”。启动器会自动读取同目录的 DLL 和翻译目录，不需要填写游戏路径。
+“你的MOD目录”应替换为包含盘符的完整绝对路径。命令必须保持为一整行，路径两侧使用
+英文半角双引号。以后仍然从 Steam 正常点击“开始游戏”。启动器会自动读取同目录的
+DLL 和翻译目录，不需要填写游戏路径。
 
 ### 设置 Steam 语言与启动选项
 
