@@ -1,7 +1,7 @@
 # 第三方许可说明
 
 本 MOD 的中文字体资源包含由以下开放字体生成的字形轮廓。该部分不适用仓库的自定义
-非开源使用许可，而是继续遵循 SIL Open Font License 1.1。
+使用许可，而是继续遵循 SIL Open Font License 1.1。
 
 ## Noto Sans SC / Source Han Sans SC
 

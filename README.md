@@ -53,7 +53,9 @@ Dishonored2_Simplified_Chinese.zip
 ## Important Notes / 重要说明
 
 1. 当前只支持经项目验证的 **Windows x64 Steam 版 `Dishonored2.exe 1.77.9.0`**。
-2. 安装静态资源需要 **Void Installer**。
+2. 安装静态资源需要前置工具
+   [Void Installer](https://www.nexusmods.com/dishonored2/mods/31) (作者：FCH823)。
+   请从该页面下载并解压最新版本；本 MOD 不包含 Void Installer。
 3. 完整对白翻译需要设置一次 **Steam 启动选项**。只安装 Void 资源而不设置启动选项，
    无法获得全部精校对白。
 4. 请在 Steam 中把游戏语言设置为 **中文（繁体）**。本 MOD 使用游戏原有中文槽位，
@@ -150,12 +152,25 @@ Dishonored2_Simplified_Chinese.zip
 
 - 操作系统：Windows x64
 - 游戏版本：Steam 版 Dishonored 2，`Dishonored2.exe 1.77.9.0`
-- 静态资源安装工具：Void Installer
+- 静态资源安装工具：[Void Installer](https://www.nexusmods.com/dishonored2/mods/31)
 - Steam 游戏语言：中文（繁体）
 - 推荐安装前状态：未安装其他中文文本、字幕或中文字体 MOD
 
 玩家端**不需要**安装 Python、.NET SDK、CMake、Visual Studio 或额外 VC++ 运行库。
 正式启动器和 DLL 使用静态 C/C++ 运行库构建。
+
+## Prerequisite Tool / 前置工具
+
+安装本 MOD 的静态资源必须使用
+[Void Installer](https://www.nexusmods.com/dishonored2/mods/31)。请在其 Nexus Mods
+页面的 **Files** 栏下载并解压最新版本，然后运行 `VoidInstaller.exe`。Void Installer
+由 FCH823 制作，不包含在本 MOD 发布包中，也不属于本项目。
+
+Void Installer 当前需要 **Microsoft .NET 6 Desktop Runtime x64**。如果
+`VoidInstaller.exe` 可以正常打开，无需重复安装；如果系统提示缺少 .NET 运行环境，
+请从 [Microsoft 官方 .NET 6 下载页面](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+安装 Windows x64 的 **.NET Desktop Runtime 6.0**。该运行环境仅供 Void Installer
+使用，本 MOD 自带的运行时组件不依赖 .NET。
 
 ## Installation / 安装方法
 
@@ -164,7 +179,8 @@ Dishonored2_Simplified_Chinese.zip
 2. 把 ZIP 解压到一个长期保留的目录。解压后应得到
    `Dishonored2_Simplified_Chinese` 文件夹，第一层可以直接看到 `ModInfo.xml`、
    `Resources` 和 `Runtime`。
-3. 打开 Void Installer。
+3. 打开已单独下载并解压的
+   [Void Installer](https://www.nexusmods.com/dishonored2/mods/31)。
 4. **Game folder** 选择包含 `Dishonored2.exe` 和 `base` 的游戏根目录。
 5. **Mod folder** 选择包含 `ModInfo.xml` 的 `Dishonored2_Simplified_Chinese` 文件夹，
    然后安装。
@@ -305,7 +321,7 @@ Dishonored2_Simplified_Chinese.zip
 非商业的玩家制作项目，与 Arkane Studios、Bethesda Softworks 或 ZeniMax Media
 没有隶属或认可关系。使用本 MOD 必须拥有通过合法渠道取得的游戏副本。
 
-本仓库采用[自定义非开源使用许可](LICENSE.md)。玩家可以下载、安装并用于个人、
+本仓库采用[自定义使用许可](LICENSE.md)。玩家可以下载、安装并用于个人、
 非商业的正常游戏用途，也可以分享本仓库或 Release 页面的原始链接；未经许可不得
 重新上传、镜像分发、公开发布修改版或进行商业利用。明确标注的第三方内容继续遵循
 其各自许可证。
