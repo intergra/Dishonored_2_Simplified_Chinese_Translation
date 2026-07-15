@@ -297,15 +297,18 @@ Dishonored2_Simplified_Chinese.zip
 
 **简体中文字形：** Noto Sans SC / Source Han Sans SC
 
-字体依据 SIL Open Font License 1.1 使用。完整字体版权声明和许可证位于发布包的
+字体依据 SIL Open Font License 1.1 使用。第三方版权与许可详情见
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，完整字体版权声明和许可证位于发布包的
 `licenses/` 目录。
 
 游戏名称、原始文本、图像、音频和其他资产归其各自权利人所有。本 MOD 是非官方、
 非商业的玩家制作项目，与 Arkane Studios、Bethesda Softworks 或 ZeniMax Media
 没有隶属或认可关系。使用本 MOD 必须拥有通过合法渠道取得的游戏副本。
 
-本仓库没有使用 MIT、GPL 等许可证对全部内容统一再授权。除明确标注的第三方许可
-内容外，作者原创的翻译、说明和程序部分保留相应权利。
+本仓库采用[自定义非开源使用许可](LICENSE.md)。玩家可以下载、安装并用于个人、
+非商业的正常游戏用途，也可以分享本仓库或 Release 页面的原始链接；未经许可不得
+重新上传、镜像分发、公开发布修改版或进行商业利用。明确标注的第三方内容继续遵循
+其各自许可证。
 
 ## Feedback / 反馈
 
