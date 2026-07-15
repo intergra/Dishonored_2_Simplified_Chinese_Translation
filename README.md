@@ -24,11 +24,6 @@ Dishonored2_Simplified_Chinese.zip
 > 请下载 Release 页面中单独提供的 `Dishonored2_Simplified_Chinese.zip`。GitHub 自动生成的
 > `Source code (zip)` 和 `Source code (tar.gz)` 不是可安装的 MOD。
 
-当前 v1.1 安装包：
-
-- 大小：`53,052,763` 字节
-- SHA-256：`4C93614528D208AD5E12FE8020A99D3ABA733A01C2291AB5856DF14898661F57`
-
 ## Overview / 简介
 
 本 MOD 为《Dishonored 2 / 耻辱2》制作完整简体中文翻译，覆盖主菜单、HUD、任务目标、
