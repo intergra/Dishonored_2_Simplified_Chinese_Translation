@@ -19,7 +19,7 @@ Dishonored2_Simplified_Chinese.zip
 ```
 
 > [!IMPORTANT]
-> 请下载 Release 页面中单独提供的 `Dishonored2_Simplified_Chinese.zip`。GitHub 自动生成的
+> 请下载 Release 页面中单独提供的最新 `Dishonored2_Simplified_Chinese.zip`。GitHub 自动生成的
 > `Source code (zip)` 和 `Source code (tar.gz)` 不是可安装的 MOD。
 
 ## Overview / 简介
