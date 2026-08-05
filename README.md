@@ -124,6 +124,9 @@ Dishonored2_Simplified_Chinese.zip
 6. 对白、书信和日志保持克制，不添加原文没有的梗、情绪或剧情信息。
 7. 保留变量、占位符、标签、转义、换行语义和所有技术控制结构。
 
+项目已为全部 16,129 条可编辑文本建立逐条人工审校记录；正式译文修改均经过源文本、
+结构、构建结果和最终发布包的完整核对。
+
 ### 5. 安全构建与验证
 
 - 从官方资源只读提取并重新构建，不在旧 MOD 成品上叠加修改。
@@ -135,14 +138,15 @@ Dishonored2_Simplified_Chinese.zip
 
 ## Package Contents / 文件内容
 
-正式发布包固定包含 13 个文件：
+正式发布包固定包含 15 个文件：
 
 - `ModInfo.xml` 与 `package-manifest.json`
+- `licenses/` 中的 `LICENSE.md`、`THIRD_PARTY_NOTICES.md`、`OFL.md` 与
+  `NotoSansSC-COPYRIGHT.md`
 - `Resources/` 中 game1、game2、game3 的 3 组 `.voidIndex` / `.voidRessources`
 - `Runtime/D2RuntimeLauncher.exe`
 - `Runtime/D2RuntimeTranslation.dll`
 - `Runtime/speech-translations.bin`
-- Noto Sans SC 的版权与 OFL 许可证文件
 
 正式包不包含游戏本体、研究探针、调试 DLL、构建脚本、机器路径配置或运行日志。
 
@@ -259,16 +263,6 @@ DLL 和翻译目录，不需要填写游戏路径。
 - 游戏更新后如果 EXE 哈希或关键机器码发生变化，启动器会拒绝加载，需要等待兼容性
   更新。
 
-## Technical Safety / 技术安全说明
-
-- 不替换、不修改磁盘上的 `Dishonored2.exe`。
-- 不修改游戏 `base` 原始归档；静态 MOD 资源由 Void Installer 管理和卸载。
-- 运行时组件只在启动阶段验证并加载到游戏进程，不向游戏目录写入文件。
-- 启动器在翻译 DLL 完成初始化并恢复游戏主线程后立即退出，不会一直驻留后台。
-- 翻译 DLL 只修改当前进程内的既有字幕字符串，不重建声明，不保存跨地图对象指针。
-- 运行时目录、声明身份、文本槽拓扑、UTF-8 边界和 SHA-256 均经过严格验证。
-- 版本、签名、目录或结构验证失败时会停止加载，不在未知游戏版本上继续执行。
-
 ## Known Notes / 已知说明
 
 - 游戏语言菜单仍显示“中文（繁体）”，这是因为本 MOD 使用官方中文槽位。
@@ -295,10 +289,10 @@ DLL 和翻译目录，不需要填写游戏路径。
 非商业的玩家制作项目，与 Arkane Studios、Bethesda Softworks 或 ZeniMax Media
 没有隶属或认可关系。使用本 MOD 必须拥有通过合法渠道取得的游戏副本。
 
-本仓库采用[自定义使用许可](LICENSE.md)。玩家可以下载、安装并用于个人、
-非商业的正常游戏用途，也可以分享本仓库或 Release 页面的原始链接；未经许可不得
-重新上传、镜像分发、公开发布修改版或进行商业利用。明确标注的第三方内容继续遵循
-其各自许可证。
+本仓库采用[自定义使用许可](LICENSE.md)。玩家可以下载、安装并用于个人、非商业的
+正常游戏用途，也可以在保留作者、项目地址、许可文件及“非官方搬运/镜像”标注的
+前提下，免费传播完整且未经修改的官方发布包。不得发布删减版、修改版、衍生版、
+二次整合版，也不得进行任何商业化使用。明确标注的第三方内容继续遵循其各自许可证。
 
 ## Support / 赞赏支持
 

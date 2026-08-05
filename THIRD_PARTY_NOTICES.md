@@ -18,11 +18,11 @@ Source Han Sans 的创作者包括 Ryoko Nishizuka、Paul D. Hunt、Lasse Fister
 Communications、Soo-young Jang 和 Jinho Kim。Noto Sans CJK / Noto Sans SC 由 Google
 作为 Noto 项目的一部分发布，并以 Adobe Source Han Sans 为基础。
 
-正式发布 ZIP 的 `licenses/` 目录包含以下人类可读文件：
+发布包的 `licenses/` 目录中收录了以下许可文件：
 
 ```text
-licenses/NotoSansSC-COPYRIGHT.txt
-licenses/OFL.txt
+licenses/NotoSansSC-COPYRIGHT.md
+licenses/OFL.md
 ```
 
 MOD 中生成的 Dishonored 2 字体资源属于修改并嵌入后的衍生内容，不是 Google、Adobe、
