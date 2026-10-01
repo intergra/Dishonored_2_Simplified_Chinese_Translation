@@ -1,13 +1,9 @@
-# SIL Open Font License 1.1
-
-Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
-Copyright 2014-2021 Google Inc., with Reserved Font Name 'Noto'.
-Source Han Sans is created by Ryoko Nishizuka (kana & ideographs), Paul D. Hunt (Latin, Greek & Cyrillic), Lasse Fister (Latin, Greek & Cyrillic), Sandoll Communications (Korean Hangul), Soo-young Jang (Korean Hangul), Jinho Kim (Korean Hangul).
-Noto Sans CJK / Noto Sans SC is a rebranded distribution of Source Han Sans for Google's Noto project.
+Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
-https://openfontlicense.org
+https://scripts.sil.org/OFL
+
 
 -----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
@@ -22,7 +18,7 @@ with others.
 
 The OFL allows the licensed fonts to be used, studied, modified and
 redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
+fonts, including any derivative works, can be bundled, embedded, 
 redistributed and/or sold with any software provided that any reserved
 names are not used by derivative works. The fonts and derivatives,
 however, cannot be released under any other type of license. The

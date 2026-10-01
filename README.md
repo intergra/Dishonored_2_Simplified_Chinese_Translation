@@ -12,7 +12,7 @@
 
 ## 下载
 
-请前往本仓库的 [Releases](https://github.com/intergra/Dishonored_2_Simplified_Chinese_Translation/releases) 页面下载：
+请前往本仓库的 [最新 Release](https://github.com/intergra/Dishonored_2_Simplified_Chinese_Translation/releases/latest) 页面下载：
 
 ```text
 Dishonored2_Simplified_Chinese.zip
@@ -31,20 +31,22 @@ Dishonored2_Simplified_Chinese.zip
 为简体，而是结合剧情语境、人物身份、组织性质、时代气质和中国大陆玩家的阅读习惯，
 对误译、漏译、港台用语、术语不统一和不自然表达进行重新审校。
 
+人物、地点、组织、能力、物品及世界观专名优先对齐《耻辱》Wiki 对应专页和本作分节
+中已明确的中文名称，并检查这些名称在任务、文献和对白中的关联用法。英文原文仍是
+判断含义的依据；Wiki 缺少明确中文对照或存在歧义时，结合本作语境和项目规定处理，
+不按网页标题机械替换普通词义。
+
 整体文字风格尽量保持《Dishonored》系列冷峻、克制、阴暗的工业奇幻气质。任务目标、
 技能说明和 UI 文本以清晰准确为先；对白、书信和日志则在不擅自加戏的前提下保留人物
 语气和世界观氛围。
 
-本 MOD 同时重建游戏的中文字体资源。全部可绘制 CJK 槽统一使用 **Noto Sans SC /
-思源黑体简体 600** 字重，并校正字面大小、笔画重叠和垂直基线，避免简繁字体混排、
-缺字、碎笔、灰影以及大量 `~` 的问题。
+本 MOD 同时提供统一的中文字体，使用 **Noto Sans SC / 思源黑体简体 600** 字重，
+改善中文字面大小、笔画和基线，减少简繁字体混排、缺字及显示异常。
 
 当前正式方案由两部分组成：
 
-- **Void 静态资源层：** 安装主语言表、中文字体和安全的对白资源，保证菜单、界面与
-  字体能够正常加载。
-- **运行时完整对白层：** 从 Steam 启动游戏时加载全部精校对白，在保留游戏原版地图、
-  角色、存档和语音声明生命周期的前提下替换既有字幕文本槽。
+- **资源安装：** 使用 Void Installer 安装中文菜单、界面、字体和对白资源。
+- **完整对白：** 设置 Steam 启动选项，从长期保留的 MOD 目录加载完整对白翻译。
 
 ![游戏内简体中文书信界面](png/gameplay-note.png)
 
@@ -66,8 +68,7 @@ Dishonored2_Simplified_Chinese.zip
 
 ### 1. 简体中文菜单、界面与主文本
 
-项目审计官方英文主语言表的 6,229 个文本键，完整覆盖官方中文主表的 6,225 个键，
-并补入 2 条官方英文存在、但官方繁体缺失的可用文本。
+提供简体中文主菜单、界面和主文本，并补充官方中文缺失的可用内容。
 
 覆盖内容包括但不限于：
 
@@ -85,32 +86,15 @@ Dishonored2_Simplified_Chinese.zip
 
 ### 2. 全部游戏内对白与字幕
 
-项目从 `game1`、`game2`、`game3` 的官方中文资源中提取并审计：
+覆盖剧情对白、环境对话、广播、录音和游戏内字幕。译文根据人物身份、剧情分支和
+说话情景整理，不受官方繁体译文字数限制。原有配音保持不变。
 
-- 1,722 个 localized speech 物理目标
-- 1,631 个唯一 `speechScene` / `speechBarks` 声明
-- 9,098 个语音行
-- 9,900 个可编辑字幕文本槽
-
-正式运行时目录为每个字幕槽保存完整精校译文，支持在不受官方繁体字数限制的情况下
-调整语序、增删字和重写句子。声明名称、行数、顺序、角色、音频关联、分支结构和
-所有非文本字段保持不变。
-
-翻译 DLL 不重建整份语音声明，也不接管地图、存档、死亡回档、音频或事件系统。它只
-在引擎完成原版声明加载后，调用引擎自己的字符串赋值逻辑修改既有字幕槽，因此能够
-继续使用游戏原生资源生命周期。
+完整对白需要按下方说明设置 Steam 启动选项，不能只安装资源。
 
 ### 3. 完整简体中文字体支持
 
-中文字体采用 **Noto Sans SC / 思源黑体简体 600**，统一重绘 3,938 个可绘制 CJK
-字形槽：
-
-- 保持原版字体 4,217 个字符和原版码点表不变
-- 覆盖独立中文字体及主菜单、HUD、暂停菜单等全部 18 个界面字体依赖
-- 统一中文字面大小、笔画粗细和垂直基线
-- 修复复杂汉字交叠轮廓造成的碎笔、缺口和灰影
-- 主语言表、静态对白和运行时完整译文统一参与缺字审计
-- 编码缺字和视觉回译错误均为 0
+中文字体采用 **Noto Sans SC / 思源黑体简体 600**，用于主菜单、HUD、暂停菜单等
+中文界面，统一字面、笔画粗细和基线，改善复杂汉字的碎笔、缺口和灰影。
 
 字体依据 SIL Open Font License 1.1 使用，许可证文件随发布包提供。
 
@@ -119,34 +103,28 @@ Dishonored2_Simplified_Chinese.zip
 1. 英文原文是判断含义的最高依据。
 2. 结合世界观、剧情流程、人物关系、身份和说话场景。
 3. 使用符合中国大陆玩家习惯和游戏行业约定的表达。
-4. 人物、地点、组织、技能和物品译名按上下文保持一致。
+4. 已核定专名优先与《耻辱》Wiki 对齐，人物、地点、组织、技能和物品译名按上下文保持一致。
 5. 任务目标、教程、技能和 UI 优先保证清晰，不为文采牺牲玩法信息。
 6. 对白、书信和日志保持克制，不添加原文没有的梗、情绪或剧情信息。
 7. 保留变量、占位符、标签、转义、换行语义和所有技术控制结构。
 
-项目已为全部 16,129 条可编辑文本建立逐条人工审校记录；正式译文修改均经过源文本、
-结构、构建结果和最终发布包的完整核对。
-
-### 5. 安全构建与验证
-
-- 从官方资源只读提取并重新构建，不在旧 MOD 成品上叠加修改。
-- 逐项验证语言表、字体、对白目录、Void 索引和压缩元数据。
-- 使用原始 `master.index` 执行首次安装沙箱测试。
-- 发布前回读全部 108 个 Void 资源目标。
-- 启动器验证游戏 EXE 的 SHA-256 和关键机器码，版本不符时拒绝加载。
-- 发布目录与 ZIP 逐文件验证大小和 SHA-256 一致。
-
 ## Package Contents / 文件内容
 
-正式发布包固定包含 15 个文件：
+解压到独立文件夹后，应能直接看到以下结构；安装时选择这一层目录：
 
-- `ModInfo.xml` 与 `package-manifest.json`
-- `licenses/` 中的 `LICENSE.md`、`THIRD_PARTY_NOTICES.md`、`OFL.md` 与
-  `NotoSansSC-COPYRIGHT.md`
-- `Resources/` 中 game1、game2、game3 的 3 组 `.voidIndex` / `.voidRessources`
-- `Runtime/D2RuntimeLauncher.exe`
-- `Runtime/D2RuntimeTranslation.dll`
-- `Runtime/speech-translations.bin`
+```text
+Dishonored2_Simplified_Chinese/
+├── ModInfo.xml
+├── Resources/
+├── Runtime/
+│   ├── D2RuntimeLauncher.exe
+│   ├── D2RuntimeTranslation.dll
+│   └── speech-translations.bin
+├── licenses/
+└── package-manifest.json
+```
+
+`licenses/` 包含项目声明、第三方说明及 NotoSansSC 的版权与 OFL 许可证。
 
 正式包不包含游戏本体、研究探针、调试 DLL、构建脚本、机器路径配置或运行日志。
 
@@ -178,9 +156,9 @@ Void Installer 当前需要 **Microsoft .NET 6 Desktop Runtime x64**。如果
 
 1. 从 [Releases](https://github.com/intergra/Dishonored_2_Simplified_Chinese_Translation/releases)
    下载 `Dishonored2_Simplified_Chinese.zip`。
-2. 把 ZIP 解压到一个长期保留的目录。解压后应得到
-   `Dishonored2_Simplified_Chinese` 文件夹，第一层可以直接看到 `ModInfo.xml`、
-   `Resources` 和 `Runtime`。
+2. 把 ZIP 解压到游戏目录之外、一个长期保留的独立目录，例如 `Dishonored2_Simplified_Chinese`。
+   ZIP 内直接包含安装文件，请认准能看到 `ModInfo.xml`、`Resources` 和 `Runtime`
+   的目录，不要把外层目录误选为 MOD 目录。
 3. 打开已单独下载并解压的
    [Void Installer](https://www.nexusmods.com/dishonored2/mods/31)。
 4. **Game folder** 选择包含 `Dishonored2.exe` 和 `base` 的游戏根目录。
@@ -256,12 +234,10 @@ DLL 和翻译目录，不需要填写游戏路径。
 ## Compatibility / 兼容性说明
 
 - 当前只支持 Windows x64 Steam 版 `Dishonored2.exe 1.77.9.0`。
-- 与其他修改 `strings/chinese_m.lang`、中文 Iggy 字体、界面字体依赖或中文
-  localized speech 的 MOD 冲突。
+- 与其他修改中文文本、字幕或中文字体的 MOD 可能冲突。
 - 不建议与旧汉化包、字体替换包或其他中文本地化 MOD 同时安装。
 - 本 MOD 不修改关卡流程、敌人 AI、能力数值、武器数值、音频内容或存档格式。
-- 游戏更新后如果 EXE 哈希或关键机器码发生变化，启动器会拒绝加载，需要等待兼容性
-  更新。
+- 游戏更新后若启动器提示版本不兼容，请等待兼容性更新，不要混入其他包的文件。
 
 ## Known Notes / 已知说明
 
@@ -272,8 +248,7 @@ DLL 和翻译目录，不需要填写游戏路径。
   `D2RuntimeLauncher.exe` 的正常启动窗口，不是闪退，也不需要手动关闭。
 - 运行时启动器不是常驻程序；游戏启动后在任务管理器中看不到它继续运行属于正常现象。
 - 运行时翻译 DLL 会在游戏进程中工作，退出游戏后自动释放。
-- 主要菜单、普通存档载入和死亡检查点回档已经实机验证；少见分支和特殊 MOD 组合仍
-  欢迎反馈。
+- 如遇菜单、存档载入、死亡检查点回档或少见分支的问题，欢迎提供具体位置与截图。
 
 ## Credits / 制作信息
 
@@ -282,14 +257,14 @@ DLL 和翻译目录，不需要填写游戏路径。
 **简体中文字形：** Noto Sans SC / Source Han Sans SC
 
 字体依据 SIL Open Font License 1.1 使用。第三方版权与许可详情见
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，完整字体版权声明和许可证位于发布包的
+[第三方许可说明](licenses/THIRD_PARTY_NOTICES.md)，完整字体版权声明和许可证位于发布包的
 `licenses/` 目录。
 
 游戏名称、原始文本、图像、音频和其他资产归其各自权利人所有。本 MOD 是非官方、
 非商业的玩家制作项目，与 Arkane Studios、Bethesda Softworks 或 ZeniMax Media
 没有隶属或认可关系。使用本 MOD 必须拥有通过合法渠道取得的游戏副本。
 
-本仓库采用[自定义使用许可](LICENSE.md)。玩家可以下载、安装并用于个人、非商业的
+本仓库采用[自定义使用许可](licenses/LICENSE.md)。玩家可以下载、安装并用于个人、非商业的
 正常游戏用途，也可以在保留作者、项目地址、许可文件及“非官方搬运/镜像”标注的
 前提下，免费传播完整且未经修改的官方发布包。不得发布删减版、修改版、衍生版、
 二次整合版，也不得进行任何商业化使用。明确标注的第三方内容继续遵循其各自许可证。
@@ -336,6 +311,8 @@ DLL 和翻译目录，不需要填写游戏路径。
 - 不要手动删除仍处于安装状态的 MOD 资源。
 - 如果曾安装早期测试包或其他会修改相同资源的 MOD，先卸载相关 MOD；必要时通过
   Steam 验证游戏文件完整性后重新安装。
+- 如果选择 MOD 时出现空引用错误，请保留错误信息与安装器备份并联系作者，
+  不要手动删除备份。
 
 ### 姓名或字幕换行不自然
 

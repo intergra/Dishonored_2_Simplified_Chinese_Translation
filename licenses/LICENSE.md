@@ -30,8 +30,8 @@ Copyright © 2026 NoWindNoMoon / 此情无关风月。
 - 项目名称：`Dishonored 2 简体中文翻译 MOD`；
 - 原始项目地址：
   `https://github.com/intergra/Dishonored_2_Simplified_Chinese_Translation`；
-- 本 `LICENSE.md` 许可证文件；
-- `THIRD_PARTY_NOTICES.md` 及相关第三方许可声明。
+- 本 `licenses/LICENSE.md` 权利与使用声明；
+- `licenses/THIRD_PARTY_NOTICES.md` 及相关第三方许可文件。
 
 传播者应注明该版本为“非官方搬运”或“非官方镜像”，不得冒充作者或官方发布，不得
 暗示作者、项目维护者、游戏开发商、发行商或相关权利人对该传播行为提供认可、授权
@@ -64,8 +64,8 @@ ZeniMax Media 及其他相关权利人没有隶属、认可或赞助关系。
 Noto Sans SC / Source Han Sans SC 及由其生成的字体衍生内容继续遵循 SIL Open Font
 License 1.1，其使用、修改和分发权利以该许可证为准。
 
-第三方版权与许可详情见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。完整字体版权
-声明和 SIL Open Font License 1.1 随正式发布 ZIP 提供。
+第三方版权与许可详情见同目录的 `THIRD_PARTY_NOTICES.md`。完整字体版权声明和 SIL
+Open Font License 1.1 随正式发布 ZIP 提供。
 
 ## 6. 免责声明
 

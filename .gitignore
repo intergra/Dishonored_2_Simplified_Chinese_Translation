@@ -1,0 +1,8 @@
+# Installable MODs are Release assets, not repository source.
+/Dishonored2_Simplified_Chinese.zip
+/dist/
+
+# Local OS metadata.
+Thumbs.db
+Desktop.ini
+.DS_Store
