@@ -1,4 +1,4 @@
-# Noto Sans SC — copyright and attribution
+Noto Sans SC — copyright notice for this Mod package
 
 Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
 
@@ -14,7 +14,10 @@ CJK outlines embedded in Dishonored 2's Iggy font resources. The source TTF is a
 build input and is not included in the installable Mod.
 
 Licensed under the SIL Open Font License, Version 1.1.
-See NotoSansSC-OFL.md in this folder.
+See NotoSansSC-OFL.txt in this folder.
+
+The generated Dishonored 2 font resource is a modified and embedded derivative.
+It is not an official Google, Adobe, Noto, Source Han Sans, or Dishonored 2 font release.
 
 Upstream:
 - https://github.com/google/fonts/tree/main/ofl/notosanssc

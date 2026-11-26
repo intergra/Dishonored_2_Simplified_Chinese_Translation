@@ -1,0 +1,52 @@
+Dishonored 2 Simplified Chinese — 第三方许可说明
+
+本 Mod 的中文字体资源包含由以下开放字体生成的字形轮廓。
+字体及其衍生内容不适用本项目的自定义许可，而是继续遵循
+SIL Open Font License 1.1；项目自有内容的使用范围见同目录的 LICENSE。
+
+1. Noto Sans SC / Source Han Sans SC
+  - 使用来源：NotoSansSC-VF.ttf
+    （源 TTF 仅作为构建输入，不随 Mod 安装包分发）
+  - 实际字重：SemiBold 600
+  - 使用用途：作为《Dishonored 2》重建 Iggy 中文字体资源的字形来源，
+    用于简体中文菜单、界面、书籍日志及对白字幕显示
+  - 字体版权：Copyright 2014-2021 Adobe (http://www.adobe.com/),
+    with Reserved Font Name 'Source'.
+  - 版权归属：详见同目录 NotoSansSC-COPYRIGHT.txt
+  - 适用许可：SIL Open Font License 1.1
+    （完整正文见 NotoSansSC-OFL.txt）
+  - 上游项目：https://github.com/google/fonts/tree/main/ofl/notosanssc
+  - 关联上游：https://github.com/googlefonts/noto-cjk
+    及 https://github.com/adobe-fonts/source-han-sans
+
+2. 外部安装工具（不随包分发）
+  - Void Explorer / Void Installer 由 FCH823 开发，需另行获取：
+    Void Explorer：https://www.nexusmods.com/dishonored2/mods/30
+    Void Installer：https://www.nexusmods.com/dishonored2/mods/31
+
+3. 成品许可文件清单
+
+正式 Mod 文件夹与 ZIP 的 licenses/ 目录必须包含以下 4 份许可文件：
+  - licenses/LICENSE
+  - licenses/THIRD_PARTY_NOTICES.txt
+  - licenses/NotoSansSC-COPYRIGHT.txt
+  - licenses/NotoSansSC-OFL.txt
+
+4. 许可边界
+
+Mod 中生成的 Iggy 字体资源属于修改并嵌入后的字体衍生内容，
+不是 Google、Adobe、Noto、Source Han Sans 或《Dishonored 2》官方
+发布的字体产品。字体及其衍生内容继续遵循 SIL Open Font License 1.1；
+除明确标注的字体相关部分外，本仓库和 Mod 的其他内容不因此自动适用 OFL。
+
+“Source”是上述字体版权声明中的保留字体名称。未经相应权利人明确许可，
+修改版字体不得使用该保留名称。Noto Sans SC、Source Han Sans 与本项目
+名称及说明仅用于识别来源和非官方玩家 Mod，不表示 Google、Adobe、Noto、
+游戏开发商、发行商或其他权利人认可、赞助或为本项目背书。
+
+本项目的自定义许可不得覆盖、限制或缩减 OFL 1.1 已经授予的字体权利。
+如项目许可与适用于字体内容的 OFL 1.1 存在冲突，
+以对应的完整英文 OFL 文本为准。
+
+SIL Open Font License 1.1 官方文本：
+https://openfontlicense.org/open-font-license-official-text/

@@ -89,6 +89,8 @@ Dishonored2_Simplified_Chinese.zip
 覆盖剧情对白、环境对话、广播、录音和游戏内字幕。译文根据人物身份、剧情分支和
 说话情景整理，不受官方繁体译文字数限制。原有配音保持不变。
 
+运行时组件同时内置中文字幕排版逻辑，按中文标点停顿与行宽自动切屏折行，并保护含间隔号的人名（如“科尔沃·阿塔诺”）不被错误拆行，减少生硬断句与行首孤立标点。
+
 完整对白需要按下方说明设置 Steam 启动选项，不能只安装资源。
 
 ### 3. 完整简体中文字体支持
@@ -120,11 +122,14 @@ Dishonored2_Simplified_Chinese/
 │   ├── D2RuntimeLauncher.exe
 │   ├── D2RuntimeTranslation.dll
 │   └── speech-translations.bin
-├── licenses/
-└── package-manifest.json
+└── licenses/
+    ├── LICENSE
+    ├── THIRD_PARTY_NOTICES.txt
+    ├── NotoSansSC-COPYRIGHT.txt
+    └── NotoSansSC-OFL.txt
 ```
 
-`licenses/` 包含项目声明、第三方说明及 NotoSansSC 的版权与 OFL 许可证。
+`licenses/` 包含项目权利声明、第三方说明及 Noto Sans SC 的版权与 SIL OFL 1.1 许可证。
 
 正式包不包含游戏本体、研究探针、调试 DLL、构建脚本、机器路径配置或运行日志。
 
@@ -257,14 +262,14 @@ DLL 和翻译目录，不需要填写游戏路径。
 **简体中文字形：** Noto Sans SC / Source Han Sans SC
 
 字体依据 SIL Open Font License 1.1 使用。第三方版权与许可详情见
-[第三方许可说明](licenses/THIRD_PARTY_NOTICES.md)，完整字体版权声明和许可证位于发布包的
+[第三方许可说明](licenses/THIRD_PARTY_NOTICES.txt)，完整字体版权声明和许可证位于发布包的
 `licenses/` 目录。
 
 游戏名称、原始文本、图像、音频和其他资产归其各自权利人所有。本 MOD 是非官方、
 非商业的玩家制作项目，与 Arkane Studios、Bethesda Softworks 或 ZeniMax Media
 没有隶属或认可关系。使用本 MOD 必须拥有通过合法渠道取得的游戏副本。
 
-本仓库采用[自定义使用许可](licenses/LICENSE.md)。玩家可以下载、安装并用于个人、非商业的
+本仓库采用[自定义使用许可](licenses/LICENSE)。玩家可以下载、安装并用于个人、非商业的
 正常游戏用途，也可以在保留作者、项目地址、许可文件及“非官方搬运/镜像”标注的
 前提下，免费传播完整且未经修改的官方发布包。不得发布删减版、修改版、衍生版、
 二次整合版，也不得进行任何商业化使用。明确标注的第三方内容继续遵循其各自许可证。
@@ -316,10 +321,8 @@ DLL 和翻译目录，不需要填写游戏路径。
 
 ### 姓名或字幕换行不自然
 
-- 游戏会根据当前界面宽度自动换行；手动 `<br>` 不能关闭后续自动换行，在不同分辨率
-  下可能产生额外行。
-- 请在 Issue 中提供具体界面、分辨率和截图。本 MOD 会优先调整语序和文字长度，不会向
-  不支持富文本的普通字符串强塞换行标签。
+- 本 MOD 已在静态字库映射与运行时字幕排版中同时处理间隔号人名保护与中文标点停顿折行，过场动画与游戏内对白均会按当前界面行宽自动分段。
+- 如在特定界面、超宽屏或非标准分辨率下仍出现异常断行或文本溢出，请在 Issue 中提供具体位置、分辨率和截图以便继续排查。
 
 ### 人物在没有按键时持续移动
 

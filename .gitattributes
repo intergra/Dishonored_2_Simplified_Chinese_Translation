@@ -1,6 +1,8 @@
 * text=auto
 *.md text eol=lf
+*.txt text eol=lf
+licenses/LICENSE text eol=lf
 *.png binary
 *.jpg binary
 *.jpeg binary
-licenses/*-OFL.md text eol=lf whitespace=-blank-at-eol
+licenses/*-OFL.txt text eol=lf whitespace=-blank-at-eol
